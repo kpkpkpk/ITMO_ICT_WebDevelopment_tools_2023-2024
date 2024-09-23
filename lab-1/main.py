@@ -244,21 +244,16 @@ def update_expense(expense_id: int, expense: ExpenseBase, db: Session = Depends(
 # Нужен для главной страницы, чтобы клиент не вычислял это у себя на стороне. см фигму главный экран
 @app.get("/report/{user_id}", response_model=dict)
 def financial_report(user_id: int, db: Session = Depends(get_db)):
-    # Получаем пользователя
     user = db.query(User).filter(User.id == user_id).first()
     if not user:
         return {"error": "User not found"}
 
-    # Считаем общий баланс
     total_balance = sum(income.amount for income in user.incomes) - sum(expense.amount for expense in user.expenses)
 
-    # Получаем список доходов пользователя
     user_incomes = [income.dict() for income in user.incomes]
 
-    # Получаем список расходов пользователя
     user_expenses = [expense.dict() for expense in user.expenses]
 
-    # Получаем список бюджетов пользователя
     user_budgets = [budget.dict() for budget in user.budgets]
 
     return {

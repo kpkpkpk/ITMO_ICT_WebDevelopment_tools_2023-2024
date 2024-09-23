@@ -1,5 +1,7 @@
+import os
 from logging.config import fileConfig
 
+from dotenv import load_dotenv
 from sqlalchemy import engine_from_config
 from sqlalchemy import pool
 
@@ -19,9 +21,12 @@ fileConfig(config.config_file_name)
 # for 'autogenerate' support
 # from myapp import mymodel
 # target_metadata = mymodel.Base.metadata
-#target_metadata = None
+# target_metadata = None
 
 target_metadata = SQLModel.metadata
+
+load_dotenv()
+
 
 # other values from the config, defined by the needs of env.py,
 # can be acquired:
@@ -41,7 +46,7 @@ def run_migrations_offline() -> None:
     script output.
 
     """
-    url = config.get_main_option("sqlalchemy.url")
+    url = config.get_main_option(os.getenv("DB_URL"))
     context.configure(
         url=url,
         target_metadata=target_metadata,
