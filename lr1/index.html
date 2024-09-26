@@ -1,0 +1,860 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../lr2/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.38">
+    
+    
+      
+        <title>LR1 - My Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.8c3ca2c6.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#no-1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="My Docs" class="md-header__button md-logo" aria-label="My Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            My Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              LR1
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="My Docs" class="md-nav__button md-logo" aria-label="My Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    My Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    LR1
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    LR1
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Задание
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Задание">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Разработка сервиса для управления личными финансами
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Процесс разработки
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lr2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LR2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lr3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LR3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Задание
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Задание">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Разработка сервиса для управления личными финансами
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Процесс разработки
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="no-1">Лабораторная работа № 1</h1>
+<h2 id="_1">Задание</h2>
+<h3 id="_2">Разработка сервиса для управления личными финансами</h3>
+<p>Необходимо создать простой сервис для управления личными финансами. Сервис должен позволять пользователям вводить доходы и расходы, устанавливать бюджеты на различные категории, а также просматривать отчеты о своих финансах. Дополнительные функции могут включать в себя возможность получения уведомлений о превышении бюджета, анализа трат и установки целей на будущее.</p>
+<h2 id="_3">Процесс разработки</h2>
+<p><code>db.py</code></p>
+<pre><code class="language-python">from sqlmodel import SQLModel, Session, create_engine
+
+db_url = 'postgresql://postgres:postgres@localhost/lab_db'
+engine = create_engine(db_url, echo=True)
+
+
+def init_db():
+    SQLModel.metadata.create_all(engine)
+
+
+def get_db():
+    with Session(engine) as session:
+        yield session
+</code></pre>
+<p><code>main.py</code></p>
+<pre><code class="language-python">
+from fastapi import FastAPI, Depends, HTTPException
+
+from models import *
+from db import *
+
+app = FastAPI()
+
+
+@app.on_event(&quot;startup&quot;)
+def on_startup():
+    init_db()
+
+
+@app.get(&quot;/&quot;)
+async def root():
+    return {&quot;message&quot;: &quot;Hello World&quot;}
+
+
+@app.get(&quot;/user/{user_id}&quot;, response_model=User)
+def get_user(user_id: int, db: Session = Depends(get_db)):
+    db_user = db.query(User).filter(User.id == user_id).first()
+    if not db_user:
+        raise HTTPException(status_code=404, detail=&quot;User not found&quot;)
+    return db_user
+
+
+@app.get(&quot;/users&quot;, response_model=List[User])
+def get_users(db: Session = Depends(get_db)):
+    return db.query(User).all()
+
+
+@app.post(&quot;/user&quot;)
+def create_user(user: UserBase, db: Session = Depends(get_db)):
+    db_user = User(**user.dict())
+    db.add(db_user)
+    db.commit()
+    db.refresh(db_user)
+    return db_user
+
+
+@app.delete(&quot;/user/{user_id}&quot;)
+def delete_user(user_id: int, db: Session = Depends(get_db)):
+    db_user = db.query(User).filter(User.id == user_id).first()
+    if not db_user:
+        raise HTTPException(status_code=404, detail=&quot;User not found&quot;)
+    db.delete(db_user)
+    db.commit()
+    return {&quot;message&quot;: &quot;User deleted successfully&quot;}
+
+
+@app.patch(&quot;/user/{user_id}&quot;)
+def update_user(user_id: int, user: UserBase, db: Session = Depends(get_db)):
+    db_user = db.query(User).filter(User.id == user_id).first()
+    if not db_user:
+        raise HTTPException(status_code=404, detail=&quot;User not found&quot;)
+    for attr, value in user.dict().items():
+        setattr(db_user, attr, value)
+    db.commit()
+    db.refresh(db_user)
+    return db_user
+
+
+# Endpoints for Budget
+@app.get(&quot;/budget/{budget_id}&quot;, response_model=Budget)
+def get_budget(budget_id: int, db: Session = Depends(get_db)):
+    db_budget = db.query(Budget).filter(Budget.id == budget_id).first()
+    if not db_budget:
+        raise HTTPException(status_code=404, detail=&quot;Budget not found&quot;)
+    return db_budget
+
+
+@app.get(&quot;/budgets&quot;, response_model=List[Budget])
+def get_budgets(db: Session = Depends(get_db)):
+    return db.query(Budget).all()
+
+
+@app.post(&quot;/budget&quot;)
+def create_budget(budget: BudgetBase, db: Session = Depends(get_db)):
+    db_budget = Budget(**budget.dict())
+    db.add(db_budget)
+    db.commit()
+    db.refresh(db_budget)
+    return db_budget
+
+
+@app.delete(&quot;/budget/{budget_id}&quot;)
+def delete_budget(budget_id: int, db: Session = Depends(get_db)):
+    db_budget = db.query(Budget).filter(Budget.id == budget_id).first()
+    if not db_budget:
+        raise HTTPException(status_code=404, detail=&quot;Budget not found&quot;)
+    db.delete(db_budget)
+    db.commit()
+    return {&quot;message&quot;: &quot;Budget deleted successfully&quot;}
+
+
+@app.patch(&quot;/budget/{budget_id}&quot;)
+def update_budget(budget_id: int, budget: BudgetBase, db: Session = Depends(get_db)):
+    db_budget = db.query(Budget).filter(Budget.id == budget_id).first()
+    if not db_budget:
+        raise HTTPException(status_code=404, detail=&quot;Budget not found&quot;)
+    for attr, value in budget.dict().items():
+        setattr(db_budget, attr, value)
+    db.commit()
+    db.refresh(db_budget)
+    return db_budget
+
+
+# Endpoints for Category CRUD operations
+@app.get(&quot;/category/{category_id}&quot;, response_model=Category)
+def get_category(category_id: int, db: Session = Depends(get_db)):
+    db_category = db.query(Category).filter(Category.id == category_id).first()
+    if not db_category:
+        raise HTTPException(status_code=404, detail=&quot;Category not found&quot;)
+    return db_category
+
+
+@app.get(&quot;/categories&quot;, response_model=List[Category])
+def get_categories(db: Session = Depends(get_db)):
+    return db.query(Category).all()
+
+
+@app.post(&quot;/category&quot;)
+def create_category(category: CategoryBase, db: Session = Depends(get_db)):
+    db_category = Category(**category.dict())
+    db.add(db_category)
+    db.commit()
+    db.refresh(db_category)
+    return db_category
+
+
+@app.delete(&quot;/category/{category_id}&quot;)
+def delete_category(category_id: int, db: Session = Depends(get_db)):
+    db_category = db.query(Category).filter(Category.id == category_id).first()
+    if not db_category:
+        raise HTTPException(status_code=404, detail=&quot;Category not found&quot;)
+    db.delete(db_category)
+    db.commit()
+    return {&quot;message&quot;: &quot;Category deleted successfully&quot;}
+
+
+@app.patch(&quot;/category/{category_id}&quot;)
+def update_category(category_id: int, category: CategoryBase, db: Session = Depends(get_db)):
+    db_category = db.query(Category).filter(Category.id == category_id).first()
+    if not db_category:
+        raise HTTPException(status_code=404, detail=&quot;Category not found&quot;)
+    for attr, value in category.dict().items():
+        setattr(db_category, attr, value)
+    db.commit()
+    db.refresh(db_category)
+    return db_category
+
+
+# Endpoints for Incomes
+@app.get(&quot;/income/{income_id}&quot;, response_model=Income)
+def get_income(income_id: int, db: Session = Depends(get_db)):
+    db_income = db.query(Income).filter(Income.id == income_id).first()
+    if not db_income:
+        raise HTTPException(status_code=404, detail=&quot;Income not found&quot;)
+    return db_income
+
+
+@app.get(&quot;/incomes&quot;, response_model=List[Income])
+def get_incomes(db: Session = Depends(get_db)):
+    return db.query(Income).all()
+
+
+@app.post(&quot;/income&quot;)
+def create_income(income: IncomeBase, db: Session = Depends(get_db)):
+    db_income = Income(**income.dict())
+    db.add(db_income)
+    db.commit()
+    db.refresh(db_income)
+    return db_income
+
+
+@app.delete(&quot;/income/{income_id}&quot;)
+def delete_income(income_id: int, db: Session = Depends(get_db)):
+    db_income = db.query(Income).filter(Income.id == income_id).first()
+    if not db_income:
+        raise HTTPException(status_code=404, detail=&quot;Income not found&quot;)
+    db.delete(db_income)
+    db.commit()
+    return {&quot;message&quot;: &quot;Income deleted successfully&quot;}
+
+
+@app.patch(&quot;/income/{income_id}&quot;)
+def update_income(income_id: int, income: IncomeBase, db: Session = Depends(get_db)):
+    db_income = db.query(Income).filter(Income.id == income_id).first()
+    if not db_income:
+        raise HTTPException(status_code=404, detail=&quot;Income not found&quot;)
+    for attr, value in income.dict().items():
+        setattr(db_income, attr, value)
+    db.commit()
+    db.refresh(db_income)
+    return db_income
+
+
+# Endpoints for Expense
+@app.get(&quot;/expense/{expense_id}&quot;, response_model=Expense)
+def get_expense(expense_id: int, db: Session = Depends(get_db)):
+    db_expense = db.query(Expense).filter(Expense.id == expense_id).first()
+    if not db_expense:
+        raise HTTPException(status_code=404, detail=&quot;Expense not found&quot;)
+    return db_expense
+
+
+@app.get(&quot;/expenses&quot;, response_model=List[Expense])
+def get_expenses(db: Session = Depends(get_db)):
+    return db.query(Expense).all()
+
+
+@app.post(&quot;/expense&quot;)
+def create_expense(expense: ExpenseBase, db: Session = Depends(get_db)):
+    db_expense = Expense(**expense.dict())
+    db.add(db_expense)
+    db.commit()
+    db.refresh(db_expense)
+    return db_expense
+
+
+@app.delete(&quot;/expense/{expense_id}&quot;)
+def delete_expense(expense_id: int, db: Session = Depends(get_db)):
+    db_expense = db.query(Expense).filter(Expense.id == expense_id).first()
+    if not db_expense:
+        raise HTTPException(status_code=404, detail=&quot;Expense not found&quot;)
+    db.delete(db_expense)
+    db.commit()
+    return {&quot;message&quot;: &quot;Expense deleted successfully&quot;}
+
+
+@app.patch(&quot;/expense/{expense_id}&quot;)
+def update_expense(expense_id: int, expense: ExpenseBase, db: Session = Depends(get_db)):
+    db_expense = db.query(Expense).filter(Expense.id == expense_id).first()
+    if not db_expense:
+        raise HTTPException(status_code=404, detail=&quot;Expense not found&quot;)
+    for attr, value in expense.dict().items():
+        setattr(db_expense, attr, value)
+    db.commit()
+    db.refresh(db_expense)
+    return db_expense
+
+
+#https://www.figma.com/design/GKc6sROqiDpg0Ht82MzHf1/Finance-Tracker?node-id=0-1&amp;node-type=canvas&amp;t=q1L0quBhVY17c4TW-0
+# Нужен для главной страницы, чтобы клиент не вычислял это у себя на стороне. см фигму главный экран
+@app.get(&quot;/report/{user_id}&quot;, response_model=dict)
+def financial_report(user_id: int, db: Session = Depends(get_db)):
+    # Получаем пользователя
+    user = db.query(User).filter(User.id == user_id).first()
+    if not user:
+        return {&quot;error&quot;: &quot;User not found&quot;}
+
+    # Считаем общий баланс
+    total_balance = sum(income.amount for income in user.incomes) - sum(expense.amount for expense in user.expenses)
+
+    # Получаем список доходов пользователя
+    user_incomes = [income.dict() for income in user.incomes]
+
+    # Получаем список расходов пользователя
+    user_expenses = [expense.dict() for expense in user.expenses]
+
+    # Получаем список бюджетов пользователя
+    user_budgets = [budget.dict() for budget in user.budgets]
+
+    return {
+        &quot;user_id&quot;: user.id,
+        &quot;total_balance&quot;: total_balance,
+        &quot;incomes&quot;: user_incomes,
+        &quot;expenses&quot;: user_expenses,
+        &quot;budgets&quot;: user_budgets
+    }
+
+
+# Firebase пуши на мобилку
+@app.get(&quot;/notifications/{user_id}&quot;, response_model=list)
+def budget_notifications(user_id: int, db: Session = Depends(get_db)):
+    user = db.query(User).filter(User.id == user_id).first()
+    if not user:
+        raise HTTPException(status_code=404, detail=&quot;User not found&quot;)
+
+    notifications = []
+
+    for budget in user.budgets:
+        total_expenses = sum(expense.amount for expense in budget.category.expenses)
+
+        if total_expenses &gt; budget.amount:
+            notification = {
+                &quot;budget_id&quot;: budget.id,
+                &quot;category_name&quot;: budget.category.name,
+                &quot;total_expenses&quot;: total_expenses,
+                &quot;budget_amount&quot;: budget.amount
+            }
+            notifications.append(notification)
+
+    return notifications
+</code></pre>
+<pre><code class="language-python">from datetime import datetime
+from typing import List
+from sqlmodel import SQLModel, Field, Relationship
+
+
+class UserBase(SQLModel):
+    username: str
+    email: str
+    password: str
+
+
+class User(UserBase, table=True):
+    id: int = Field(default=None, primary_key=True)
+    categories: List[&quot;Category&quot;] = Relationship(back_populates=&quot;user&quot;)
+    incomes: List[&quot;Income&quot;] = Relationship(back_populates=&quot;user&quot;)
+    expenses: List[&quot;Expense&quot;] = Relationship(back_populates=&quot;user&quot;)
+    budgets: List[&quot;Budget&quot;] = Relationship(back_populates=&quot;user&quot;)
+
+
+class CategoryBase(SQLModel):
+    name: str
+    description: str
+    user_id: int = Field(foreign_key=&quot;user.id&quot;)
+
+
+class Category(CategoryBase, table=True):
+    id: int = Field(default=None, primary_key=True)
+    incomes: List[&quot;Income&quot;] = Relationship(back_populates=&quot;category&quot;)
+    expenses: List[&quot;Expense&quot;] = Relationship(back_populates=&quot;category&quot;)
+    budgets: List[&quot;Budget&quot;] = Relationship(back_populates=&quot;category&quot;)
+    user: User = Relationship(back_populates=&quot;categories&quot;)
+
+
+class IncomeBase(SQLModel):
+    amount: float
+    description: str
+    date: datetime = Field(default=datetime.utcnow)
+    user_id: int = Field(foreign_key=&quot;user.id&quot;)
+    category_id: int = Field(foreign_key=&quot;category.id&quot;)
+
+
+class Income(IncomeBase, table=True):
+    id: int = Field(default=None, primary_key=True)
+    user: User = Relationship(back_populates=&quot;incomes&quot;)
+    category: Category = Relationship(back_populates=&quot;incomes&quot;)
+
+
+class ExpenseBase(SQLModel):
+    amount: float
+    description: str
+    date: datetime = Field(default=datetime.utcnow)
+    user_id: int = Field(foreign_key=&quot;user.id&quot;)
+    category_id: int = Field(foreign_key=&quot;category.id&quot;)
+
+
+class Expense(ExpenseBase, table=True):
+    id: int = Field(default=None, primary_key=True)
+    user: User = Relationship(back_populates=&quot;expenses&quot;)
+    category: Category = Relationship(back_populates=&quot;expenses&quot;)
+
+
+class BudgetBase(SQLModel):
+    amount: float
+    date_valid_until: datetime
+    user_id: int = Field(foreign_key=&quot;user.id&quot;)
+    category_id: int = Field(foreign_key=&quot;category.id&quot;)
+
+
+class Budget(BudgetBase, table=True):
+    id: int = Field(default=None, primary_key=True)
+    user: User = Relationship(back_populates=&quot;budgets&quot;)
+    category: Category = Relationship(back_populates=&quot;budgets&quot;)
+
+</code></pre>
+<h1 id="_4">Выводы</h1>
+<p>Создал интерфейс для сервиса бюджета, который буду интегрировать в приложение на андроиде</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d6f25eb3.min.js"></script>
+      
+    
+  </body>
+</html>
